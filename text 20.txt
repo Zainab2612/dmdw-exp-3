@@ -1,0 +1,8 @@
+#import pandas as pd 
+import matplotlib.pyplot as plot
+ds=pd.read_csv("downloads/iris/ToyotaCorolla.csv")
+plot.scatter(ds['Price'],ds['Age'],color=['Blue'])
+plot.xlabel('Price')
+plot.ylabel('Age')
+plot.title("Price VS Age")
+plot.show()

@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.read_csv("downloads/iris/ToyotaCorolla.csv")
+from pandas.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+names = ['Price', 'Age', 'KM', 'HP', 'CC', 'Doors', 'Weight']
+scatter_matrix(df)
+plt.show()
